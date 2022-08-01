@@ -11,7 +11,7 @@ import SwiftUI
 struct EvangelistTestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CurrentWeatherView(viewModel: CurrentWeatherViewModel())
         }
     }
 }
