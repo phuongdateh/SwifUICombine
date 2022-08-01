@@ -24,6 +24,7 @@
 		1ABA69652896CB3E005CFB2D /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA69642896CB3E005CFB2D /* CurrentWeatherView.swift */; };
 		1ABA69682896CC1A005CFB2D /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA69672896CC1A005CFB2D /* View+Ext.swift */; };
 		1ABA696B2896CCD6005CFB2D /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA696A2896CCD6005CFB2D /* Spinner.swift */; };
+		1ABA69742898067A005CFB2D /* SwiftUIMapView in Frameworks */ = {isa = PBXBuildFile; productRef = 1ABA69732898067A005CFB2D /* SwiftUIMapView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ABA69742898067A005CFB2D /* SwiftUIMapView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +239,9 @@
 			dependencies = (
 			);
 			name = EvangelistTest;
+			packageProductDependencies = (
+				1ABA69732898067A005CFB2D /* SwiftUIMapView */,
+			);
 			productName = EvangelistTest;
 			productReference = 1A7C351928899F7000FC98F3 /* EvangelistTest.app */;
 			productType = "com.apple.product-type.application";
@@ -309,6 +314,9 @@
 				Base,
 			);
 			mainGroup = 1A7C351028899F7000FC98F3;
+			packageReferences = (
+				1ABA697228980679005CFB2D /* XCRemoteSwiftPackageReference "swiftui-mapview" */,
+			);
 			productRefGroup = 1A7C351A28899F7000FC98F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -689,6 +697,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1ABA697228980679005CFB2D /* XCRemoteSwiftPackageReference "swiftui-mapview" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sgade/swiftui-mapview";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1ABA69732898067A005CFB2D /* SwiftUIMapView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ABA697228980679005CFB2D /* XCRemoteSwiftPackageReference "swiftui-mapview" */;
+			productName = SwiftUIMapView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A7C351128899F7000FC98F3 /* Project object */;
 }
